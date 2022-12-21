@@ -1,0 +1,92 @@
+:root{
+    --primary: #22277A; 
+    --secondary: #B9BFFF;
+    --dark: #663399;
+    --light: #8B74BD;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: var(--primary);
+}
+
+.App{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.calculator{
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--light);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0px 2px 64px rgba(0,0,0,0.2);
+}
+
+.display{
+    padding: 16px;
+    text-align: right;
+    background-color: var(--dark);
+    color: #898;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.display span {
+    font-size: 18px;
+    color:  var(--light);
+    padding: 10px;
+    opacity: 0.4;
+}
+
+button{
+    appearance: none;
+    border: none;
+    outline: none;
+    color: black;
+    background-color: #FFFDD0;
+    font-size: 20px;
+    padding: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    opacity: 0.75;
+}
+
+.operator{
+    display: flex;
+    background-color: var(--primary);
+}
+
+.operator button{
+    flex: 1 1 0%;
+    font-weight: 600;
+    background-color: #F6F0BC;
+}
+
+.digits{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.digits button {
+    flex: 1 1 33.3%;
+    background-color: var(--secondary);
+}
+
+.digits button:hover {
+    flex: 1 1 33.3%;
+    background-color: #F6F0BC;
+}
